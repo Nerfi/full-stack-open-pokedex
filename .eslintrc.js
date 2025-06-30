@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "env": {
     "browser": true,
     "es6": true,
@@ -19,10 +19,10 @@ export default {
     "react", "jest"
   ],
   "rules": {
-    "indent": [
-      "error",
-        2
-      ],
+    // "indent": [
+    //   "error",
+    //     2
+    //   ],
     "linebreak-style": [
       "error",
       "unix"
