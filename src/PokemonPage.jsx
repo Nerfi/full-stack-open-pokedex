@@ -43,14 +43,14 @@ const PokemonPage = ({ previous, next }) => {
               <tbody>
                 {stats.map(({ name, value }) => (
                   <tr key={name}>
-                    <td className="pokemon-stats-name">{name}</td>
-                    <td className="pokemon-stats-value">{value}</td>
+                    <td className='pokemon-stats-name'>{name}</td>
+                    <td className='pokemon-stats-value'>{value}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <div className="pokemon-abilities">
+          <div className='pokemon-abilities'>
             {normalAbility && <PokemonAbility abilityName={formatName(normalAbility.ability.name)} />}
             {hiddenAbility && <PokemonAbility abilityName={formatName(hiddenAbility.ability.name)} />}
           </div>
