@@ -1,0 +1,18 @@
+name: Deploy pipeline
+
+on: 
+ push:
+   branches:
+      - main
+jobs:
+  deploy_pipeline:
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    - name: Install deps
+      run: npm install
+    - name: check styles
+      run: npm run eslint
